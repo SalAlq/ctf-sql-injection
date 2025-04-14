@@ -19,4 +19,3 @@ The goal is to find a security problem (SQL Injection) in a PHP login form and u
 - In the login form, enter this in the username: ' OR 1=1 #
 - For the password, type anything.
 - You will be redirected to another page (`dashboard.php`) where the flag will appear.
-- Then you will see the flag.
