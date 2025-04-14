@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    // ⚠️ استعلام غير آمن يحتوي على SQL Injection (لأغراض التحدي فقط)
+
     $sql = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
     $result = $conn->query($sql);
 
@@ -111,7 +111,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="submit" value="Login">
     </form>
 
-    <!-- عرض الرسالة -->
     <?php if (!empty($message)) echo $message; ?>
 </div>
 </body>
