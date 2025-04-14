@@ -16,6 +16,6 @@ The goal is to find a security problem SQL Injection in a PHP login form and use
 5. Then go to: http://localhost/ctf_challenge/login.php
 
 ## How to Solve It
-- In the login form, enter this in the username: ' OR 1=1 #
+- In the login form, enter in the username one of them: (' OR 1=1 #) or (' OR 1=1 -- )
 - For the password, type anything.
 - You will be redirected to another page `dashboard.php` where the flag will appear.
