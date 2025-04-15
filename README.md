@@ -9,7 +9,7 @@ The goal is to find a security problem SQL Injection in a PHP login form and use
 - Web browser
 
 ## How to Use
-1. Go to C:\xampp\htdocs\ and create a new folder named ctf_challenge, then copy all challenge files into that folder.
+1. Go to C:\xampp\htdocs\ and create a new folder named (ctf_challenge), then copy all challenge files into that folder.
 2. Open your browser and go to: http://localhost/phpmyadmin
 3. Create a database called: ctf_challenge
 4. Click “Import” and upload the file: db.sql
