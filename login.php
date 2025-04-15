@@ -1,6 +1,7 @@
 <?php
 
 session_start();
+
 //database connection
 $conn = new mysqli("localhost", "root", "", "ctf_challenge");
 
@@ -14,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-
+  
     $sql = "SELECT * FROM users WHERE username = '$username' AND password = '$password'";
     $result = $conn->query($sql);
 
@@ -110,6 +111,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <input type="submit" value="Login">
     </form>
+
 
     <?php if (!empty($message)) echo $message; ?>
 </div>
